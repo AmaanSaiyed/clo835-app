@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaan's Web App - CLO835</title>
+    <style>
+        body {
+            background-color: {{ background_color }};
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #f0f0f0;
+            background-image: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        .container {
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 8px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.95em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Deployed by Amaan Saiyed</h1>
+        <p>This web app is live inside a Docker container!</p>
+        <p>Background: <strong>{{ background_color|title }}</strong></p>
+        <p>Status: <strong>Everything is running smoothly ✅</strong></p>
+
+        <div class="footer">
+            <p>Built with ❤️ for CLO835</p>
+            <p>Summer 2025 | Powered by Flask, Docker, and Automation</p>
+            <p>GitHub: <a href="https://github.com/AmaanSaiyed" target="_blank" style="color: #ffcc00;">@AmaanSaiyed</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
